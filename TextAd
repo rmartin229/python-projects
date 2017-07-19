@@ -1,10 +1,11 @@
-#Story
 
+
+#Story
 start = '''
 It's July 20th, 2017. You are walking home from Girls Who Code when
 you hear a bewildering groan coming from the Moody's entrance.
 Thinking nothing of it, you continue walking to the subway entrance until
-hoards of people flood out of the path, screaming in fear. They rush past,
+hoards of people flood out of the Path, screaming in fear. They rush past,
 nearly knocking you over. Once they've cleared, you see three grotesque
 human-like creatures follow behind.
 
@@ -17,14 +18,110 @@ Fight. Shelter or subway.
 ladderStory = '''
 Escape. Jump or fight
 '''
+leadpipeStoryShelter = '''
+You die
+'''
+leadpipeStorySubway = '''
+no electricity. left or right
+'''
+leadpipeLeft = '''
+There's zombies. You die.
+'''
+leadpipeRight = '''
+Survivors. Join?
+'''
+leadpipeJoin = '''
+You're friends now.
+'''
+leadpipeLeave = '''
+They rob you and you hear zombies coming.
+'''
 
 #Code
-
 print(start)
+
+
 print("Type 'lead pipe' to fight or 'ladder' to escape.")
 user_input = input()
 if user_input == "lead pipe":
     print(leadpipeStory) # finished the story by writing what happens
+    print("Type 'shelter' to look for shelter or 'subway' to go underground.")
+    user_input = input()
+    if user_input == "shelter":
+        print(leadpipeStoryShelter)
+        print("GAME OVER")
+    elif user_input == "subway":
+        print(leadpipeStorySubway)
+        user_input = input()
+        if user_input == "left":
+            print(leadpipeLeft)
+            print("GAME OVER")
+        elif user_input == "right":
+            print(leadpipeRight)
+                if user_input == "join":
+                    print(leadpipeJoin)
+                elif user_input == "leave":
+                    print(leadpipeLeave)
+                else:
+                    print("Incorrect input! Try again. Type 'join' to go with the survivors or 'leave' to abandon the survivors.")
+                    while True:
+                        user_input = input()
+                        if user_input == "join":
+                            print(leadpipeJoin)
+                        elif user_input == "leave":
+                            print(leadpipeLeave)
+                            print("GAME OVER")
+        else:
+            print("Incorrect input! Try again. Type 'shelter' to look for shelter or 'subway' to go underground.")
+            while True:
+                user_input = input()
+                if user_input == "left":
+                    print(leadpipeLeft)
+                    print("GAME OVER")
+                elif user_input == "right":
+                    print(leadpipeRight)
+                    if user_input == "join":
+                        print(leadpipeJoin)
+                    elif user_input == "leave":
+                        print(leadpipeLeave)
+                    else:
+                        print("Incorrect input! Try again. Type 'join' to go with the survivors or 'leave' to abandon the survivors.")
+                        while True:
+                            user_input = input()
+                            if user_input == "join":
+                                print(leadpipeJoin)
+                            elif user_input == "leave":
+                                print(leadpipeLeave)
+                                print("GAME OVER")
+    else:
+        print("Incorrect input! Try again. Type 'shelter' to look for shelter or 'subway' to go underground.")
+        while True:
+            user_input = input()
+            if user_input == "shelter":
+                print(leadpipeStoryShelter)
+            elif user_input == "subway":
+                print(leadpipeStorySubway)
+                user_input = input()
+                if user_input == "left":
+                    print(leadpipeLeft)
+                    print("GAME OVER")
+                elif user_input == "right":
+                    print(leadpipeRight)
+                        if user_input == "join":
+                            print(leadpipeJoin)
+                        elif user_input == "leave":
+                            print(leadpipeLeave)
+                        else:
+                            print("Incorrect input! Try again. Type 'join' to go with the survivors or 'leave' to abandon the survivors.")
+                            while True:
+                                user_input = input()
+                                if user_input == "join":
+                                    print(leadpipeJoin)
+                                elif user_input == "leave":
+                                    print(leadpipeLeave)
+                                    print("GAME OVER")
+
+
 elif user_input == "ladder":
     print(ladderStory) # finished the story writing what happens
 else:
