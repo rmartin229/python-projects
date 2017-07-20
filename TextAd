@@ -1,5 +1,3 @@
-
-
 #Story
 start = '''
 It's July 20th, 2017. You are walking home from Girls Who Code when
@@ -13,28 +11,49 @@ You lock eyes with them and immediately run into the nearest alleyway.
 There you see a lead pipe on the ground and a ladder leading up to the roof.
 '''
 leadpipeStory = '''
-Fight. Shelter or subway.
+You decide to pick up the lead pipe and fight. You bash each of their heads
+and make your escape. When you exit the alley, you see an entrance to the 
+subway station.
 '''
 ladderStory = '''
 Escape. Jump or fight
 '''
 leadpipeStoryShelter = '''
-You die
+You decide to look for shelter. You turn left to see a hoard of zombies. 
+You turn to your right and see even more. They have you surrounded. 
+You fight as many as you can before one of them latches onto your arm.
 '''
 leadpipeStorySubway = '''
-no electricity. left or right
+You decide to go down to the subway. None of the trains are running and 
+there is no one in sight. You reach into your backpack and pull out a 
+flashlight. You jump onto the tracks and start walking. You come to a 
+fork in the road.
 '''
 leadpipeLeft = '''
-There's zombies. You die.
+You decide to turn left. As you venture further down, moans echo in the 
+distance. You turn around and see zombies. You find that you are surrounded 
+and outnumbered.
 '''
 leadpipeRight = '''
-Survivors. Join?
+You decide to turn right. As you venture further down, you see a group 
+of people hudled together. You approach the group and they tell you they 
+are going to work together to find a cure. A man and a woman, both wearing 
+bloody lab coats, rapidly explain their plan for a cure. Confused, you ask 
+them where they will go and how they know what to do. The two sheepishly 
+glance at each other before admitting that they accidently created the 
+virus that caused the apocalypse. They ask if you want to join them.
 '''
 leadpipeJoin = '''
-You're friends now.
+They welcome with you with open arms and you travel with them. With your 
+combined knowledge, you and the group discover a cure and save humanity.
 '''
 leadpipeLeave = '''
-They rob you and you hear zombies coming.
+They look dejected. The man walks up to you and hugs you. He says good 
+luck and begins to walk away. Suddenly, he turns back around and punches
+you, knocking you out instantly. You wake up to the sound of disoriented 
+groans. Panicked, you reach for your backpack to see it is gone. 
+The group robbed you of your supplies and left you to deal with the 
+incoming hoard. 
 '''
 
 #Code
